@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+$bg-dark:#312F2F;
+$bg-info:#20D4D6;
+$bg-success:#0A8137;
+$bg-warning:#F8BC2B;
+
+
+$w-25:25%;
+$w-50:50%;
+$w-100:100%;
+
+$h-25:25%;
+$h-50:50%;
+$h-100:100%;
+
+$d-flex:flex;
+$d-block:block;
+
+$py-1: 1em 0;
+$px-1: 0 1em;
+$p:1em;
+
+$width: 100%;
+$height: 600px;
+
+$lang:es;
+
+body{
+	background-image: url(../media/img/fondo.png);
+}
+
+.icon-lang{
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	background-position: center;
+	@if $lang==es{background-image: url(../media/img/lang/es.jpg)}
+	@elseif $lang==fr{background-image: url(../media/img/lang/fr.jpg)}
+	@elseif $lang==en{background-image: url(../media/img/lang/en.jpg)}
+	@else {background-image: url(../media/img/lang/any.jpg)}
+}
+
+@for $i from 1 to 6{
+	h#{$i}{font-size: 3em /$i}
+	
+}
+
+@each $icono in facebook, twitter,instagram {
+	.#{$icono}-icon{
+		background-image: url(../media/img/#{$icono}.svg);
+		width: 30px;
+		height: 30px;
+		background-size: 100%;
+      	list-style: none;
+  }
+}
+
+$colors:(uno:red,dos:green,tres:yellow,cuatro:black,cinco:blue,seis:white);
+
+@each $name-color, $bg-color in $colors {
+	.circle-#{$name-color}{
+		background-color: $bg-color;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		margin-bottom: 10px;
+		
+
+	}
+
+}
+
+.btn{
+	width: 300px;
+	height: 30px;
+	background-color: $bg-info;
+	border: none;
+	color: white;
+	&:hover{
+		color: black;
+		cursor: pointer;
+
+	}
+}
+
+.btn-rounded{
+	@extend .btn;
+	border-radius: 15px;
+}
+
+
+@mixin p-m($relleno, $margen){
+	padding: $relleno;
+	margin: $margen;
+
+}
+
+
+
+

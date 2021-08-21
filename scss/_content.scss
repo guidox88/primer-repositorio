@@ -1,0 +1,25 @@
+h1,h2,h3{
+	font-family: $fontMain;
+	font-size: $fontSizeBig;
+	color:$fontColorWhite;
+}
+h4,h5,h6{
+	color:$fontColorWhite;
+}
+p{
+	font-family: $fontMain;
+	font-size: $fontSizeMedium;
+	line-height: 1.4em;
+	color:$fontColorWhite;
+}
+
+main{
+	display: $d-flex;
+	
+}
+
+section{
+	
+	padding: $p;
+	
+}

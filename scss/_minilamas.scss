@@ -1,0 +1,19 @@
+body{
+	
+
+		h4{
+			font-size:$fontSizeSmall;
+		}
+		
+		article div{
+			display:block;
+			width: $w-50;
+			
+			:hover{
+				width: 300px;
+				height: 300px;	
+				cursor: pointer;
+			}
+		}		
+	}
+

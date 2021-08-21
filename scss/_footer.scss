@@ -1,0 +1,14 @@
+
+
+	footer{
+	@include p-m(2em,0.4em);
+	height: 125px;
+	background-color:$bg-info;
+	padding: $p;
+	
+		p{
+			text-align: center;
+			color:$fontColorWhite;
+		}
+	
+}
