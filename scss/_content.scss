@@ -3,13 +3,21 @@ h1,h2,h3{
 	font-size: $fontSizeBig;
 	color:$fontColorWhite;
 }
-h4,h5,h6{
+h4{
+	color:$bg-info;
+}
+
+h5,h6{
 	color:$fontColorWhite;
+
 }
 p{
 	font-family: $fontMain;
 	font-size: $fontSizeMedium;
 	line-height: 1.4em;
+
+
+
 	color:$fontColorWhite;
 }
 

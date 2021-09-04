@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
-  "description": ""
+  "description": "github clase15 coderhouse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidox88/primer-repositorio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guidox88/primer-repositorio/issues"
+  },
+  "homepage": "https://github.com/guidox88/primer-repositorio#readme"
 }
