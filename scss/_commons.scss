@@ -126,10 +126,10 @@ $colors:(uno:red,dos:green,tres:yellow,cuatro:black,cinco:blue,seis:white);
 }
 .iconrs {
   display: block;
-  width: 75%; 
+  width: 40px; 
    &:hover {
-    width: 90%;
-    height: 90%;
+    width: 50px;
+    height: 50px;
     cursor: pointer; 
     }
 }
